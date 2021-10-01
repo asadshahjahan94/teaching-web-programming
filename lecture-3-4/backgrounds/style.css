@@ -1,0 +1,33 @@
+body {
+    background-color: lightblue;
+    background-image: url("background.jpg");
+}
+
+.hero-image {
+    background-image: url("bg2.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Shorthands
+*/
+h1 {
+    background-color: green;
+}
+
+div {
+    background-color: lightblue;
+}
+
+p {
+    background-color: yellow;
+}
+
+.header {
+    background-color: green;
+    opacity: 0.3;
+}

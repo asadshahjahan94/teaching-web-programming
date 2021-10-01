@@ -1,0 +1,11 @@
+@import url("new.css");
+
+
+body {
+    background: lightyellow;
+    font: 18px Arial, sans-serif;
+}
+
+h1 {
+    color: orange;
+}
