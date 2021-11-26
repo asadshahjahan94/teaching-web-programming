@@ -1,0 +1,9 @@
+{
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "courses": [
+        "Web Programming",
+        "Software Engineering",
+        "Software for Mobile Devices"
+    ]
+}
