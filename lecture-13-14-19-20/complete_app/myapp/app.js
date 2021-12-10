@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var adRouter = require('./routes/ad');
 const bodyParser = require("body-parser");
 var app = express();
 
@@ -28,6 +29,7 @@ app.use(bodyParser.json());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/ads', adRouter);
 
 
 
