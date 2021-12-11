@@ -10,6 +10,13 @@ mongoose.connect("mongodb://localhost/olx",{
     console.log("connected to DB")
 }
 
+const addUser = () => {
+    let user = new User({name: "Asad", email: "asad@gmail.com", password: "123456"})
+    user = new User({name: "Shah", email: "shah@gmail.com", password: "123456"})
+    user = new User({name: "Ali", email: "ali@gmail.com", password: "123456"})
+    res.send({message:"sucessfull"})
+}
+
 const userSchema = new mongoose.Schema({
     name: String,
     email: String,
