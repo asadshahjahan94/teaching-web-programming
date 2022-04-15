@@ -9,7 +9,7 @@ class Bind extends Component {
         esClick: 0
     }
 
-    this.jsOnClick = this.jsOnClick.bind(this)
+    // this.jsOnClick = this.jsOnClick.bind(this)
     }
 
     jsOnClick = function jsOnClickfun() {
