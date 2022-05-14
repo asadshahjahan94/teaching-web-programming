@@ -1,13 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
-// router.get('/', function(req, res, next) {
-//   res.send('respond with a resource');
-// });
-
-//Here we are configuring express to use body-parser as middle-ware.
-
 router.get('/', function (req, res) {
   res.setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify({

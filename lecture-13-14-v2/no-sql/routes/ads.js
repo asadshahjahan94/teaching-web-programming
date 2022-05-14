@@ -2,28 +2,12 @@ var express = require('express');
 var router = express.Router();
 const mongoose = require("mongoose");
 
-
-mongoose.connect("mongodb://localhost/olx",{
+mongoose.connect("mongodb://localhost/classified",{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 });()=>{
     console.log("connected to DB")
 }
-
-const addUser = () => {
-    let user = new User({name: "Asad", email: "asad@gmail.com", password: "123456"})
-    user = new User({name: "Shah", email: "shah@gmail.com", password: "123456"})
-    user = new User({name: "Ali", email: "ali@gmail.com", password: "123456"})
-    res.send({message:"sucessfull"})
-}
-
-const userSchema = new mongoose.Schema({
-    name: String,
-    email: String,
-    password: String
-})
-
-const User = new mongoose.model("User", userSchema)
 
 const adSchema = new mongoose.Schema({
     name: String,
@@ -80,7 +64,5 @@ router.patch('/:id', function (req, res) {
             res.send(err)
       });
 })
-
-
 
 module.exports = router;
